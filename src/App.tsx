@@ -39,7 +39,7 @@ const App: React.FC = () => {
 
       <footer className="text-center py-4 text-xs text-gray-400 border-t border-gray-200">
         <p>
-          © 2025 <span className="font-medium">celula.one</span> · Creat de <a href="https://cori.cafe" target="_blank" rel="noopener noreferrer" className="hover:text-gray-600 transition-colors">cori.cafe</a>
+          © 2025 <span className="font-medium">celula.one</span> · creat de <a href="https://4t88.xyz" target="_blank" rel="noopener noreferrer" className="hover:text-gray-600 transition-colors">4T88</a>
         </p>
       </footer>
 
