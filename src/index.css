@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --transition: 200ms ease-in-out;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+}
+
+/* Smooth fade utility */
+.fade-enter {
+  opacity: 0.01;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity var(--transition);
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0.01;
+  transition: opacity var(--transition);
+}
+
+.glass { @apply bg-white/90 backdrop-blur border border-gray-200 shadow; }
+
+.tab { @apply rounded-lg px-5 py-2.5 text-sm md:text-base font-semibold transition-all duration-200; }
+
+.tab-active { @apply bg-blue-600 border-2 border-blue-600 text-white shadow-md; }
+
+.tab-inactive { @apply bg-white border-2 border-gray-300 text-gray-700 hover:border-blue-400; }
+
+.card { @apply bg-white rounded-xl shadow-md border border-gray-200; }
+
+.legend-card { @apply card p-3 md:p-4; }
+
+.diagram-container { @apply card p-6 md:p-10 relative overflow-hidden; }
+
+.microscope-bg { background: radial-gradient(500px 250px at 50% 30%, rgba(15,23,42,0.06), rgba(0,0,0,0)); }
+
+.part-hover { transition: opacity 200ms ease, filter 200ms ease, stroke-width 200ms ease; }
+.part-hover:hover { opacity: 1; filter: drop-shadow(0 4px 12px rgba(0,0,0,0.15)); }
+
+
